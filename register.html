@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+    *{
+    margin: 0;
+    
+   
+}
+    body{
+    background-color:rgb(46, 18, 18);
+    }
+    header{
+    background-color: rgb(70, 62, 62);
+    color: aliceblue;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 20vh;    
+}
+.logo{
+    margin: 0px;
+    padding: 15px;
+    width: 70vw;
+    position: relative;
+    left: 22%;
+    font-size: 40px;
+    font-weight: bolder;
+    font-family: 'Courier New', Courier, monospace;
+}
+span2{
+animation: movers 3s linear infinite;
+display: inline-block;
+color:rgb(70, 62, 62);
+font-weight: bolder;
+}
+@keyframes movers{
+    0%{
+        text-shadow: 0 0 30px rgb(255, 251, 251);
+}
+50%{
+    text-shadow: 0 0 30px rgb(255, 255, 255);
+  transform: translateY(20px);    
+}
+100%{
+    text-shadow: 0 0 30px;
+}
+}
+span2:nth-child(1)
+{
+    animation-delay: 0.5s;
+} span2:nth-child(2)
+{
+    animation-delay: 1.0s;
+} 
+span2:nth-child(3)
+{
+    animation-delay: 1.5s;
+}
+
+.links{
+    display:flex;
+    justify-content: space-around;
+    justify-content: space-between;
+    list-style: none; 
+    margin: 10px;
+    padding: 10px;
+    position: relative;
+    left: 18%;
+    width: 55vw;
+    
+}
+form{
+    position: relative;
+    left: 60%;
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    width: 30vw;
+    color: aliceblue;
+}
+.registration{
+    position: relative;
+    right: 150%;
+    top: 70px;
+    display: flex;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 50px;
+    font-weight: bolder;
+    transform: translate(-50%,-50%);
+}
+span{
+    position: relative;
+    left: 20%;
+    top: 15px;
+    display: inline-block;
+    font-weight: bolder;
+    animation: mover 6s linear infinite;
+}
+@keyframes mover{
+    0%{
+        text-shadow: 0 0 30px;
+}
+50%{
+    text-shadow: 0 0 30px;
+
+}
+100%{
+    text-shadow: 0 0 30px;
+}
+}
+.end-form{
+    display: flex;
+    justify-content: space-around
+}
+footer{
+background-color: rgba(218, 46, 46, 0);
+color: aliceblue;
+position: relative;
+top:100px;
+left: 0;
+width: 100vw;
+height: 5vh;    
+}
+.logo2{
+    margin: 10px;
+    padding: 20px;
+    position: relative;
+    text-align: center;
+    bottom: 15px;
+    height: 2vh;
+
+}
+
+   </style> 
+</head>
+<body>
+    <header>
+        <div class="logo"> 
+           <span2> MILESTONE</span2>
+           <span2> DIGITAL</span2>
+           <span2>MARKETING</span2>
+          </div> 
+    <nav>
+     
+      
+        <ul class="links">
+      <button style=" border-style:none; background-color:rgb(70, 62, 62); ; "><li><a href="index.html"style="text-decoration: none;background-color: rgb(70, 62, 62);color: aliceblue;font-size:20px">Home</li></button></a>
+      <button style=" border-style:none; background-color:rgb(70, 62, 62); ; "><li><a href="register.html"style="text-decoration: none;background-color: rgb(70, 62, 62);color: aliceblue;font-size:20px">Register</li></button></a>
+      <button style="border: none;background-color: rgb(70, 62, 62);"><li><a href="project.html"style="text-decoration: none;background-color: rgb(70, 62, 62);color: aliceblue;font-size:20px">Projects</li></button></a>
+      <button style="border: none;background-color: rgb(70, 62, 62);"><li><a href="about.html" style="text-decoration: none;background-color: rgb(70, 62, 62);color: aliceblue;font-size:20px">About</li></button></a>
+      <button style="border: none;background-color: rgb(70, 62, 62);"><li><a href="contact.html" style="text-decoration: none;background-color: rgb(70, 62, 62);color: aliceblue;font-size:20px">Contacts</button></li></a>
+        </ul>
+      </div>
+    </nav> 
+    
+    </header>
+   
+    <form>
+        <div class="registration">
+          <span>R</span>  
+          <span>E</span>
+          <span>G</span>
+          <span>I</span>
+          <span>S</span>
+          <span>T</span>
+          <span>R</span>
+          <span>A</span>
+          <span>T</span>
+          <span>I</span>
+          <span>O</span>
+          <span>N</span>
+          <span>.</span>
+        </div>
+    <label for="username" style="position: relative;top: 20px;right:90px;">User Name :</label> 
+    <input type="text" id="username"name="username"placeholder="User Name" style="text-align: center;" required>
+<br>
+<br>
+<label for="password"style="position: relative;top: 20px;right:80px;">Password :</label>
+      <input type="password"id="password"name="password"placeholder="Password"style="text-align: center;"   required>
+      <br>
+      <br>
+      <label for="confirmpassword"style="position: relative;top: 20px;right:130px;">Confirm Password :</label>
+      <input type="password" id="confirmpassword"name="confirmpassword"placeholder="Confirm Password"style="text-align: center;"    required>
+      <br>
+      <br>
+      <label for="phonenumber"style="position: relative;top: 20px;right:110px;">Phone Number :</label>  
+      <input type="tel"id="phonenumber"name="phonenumber"placeholder="Phone Number" style="text-align: center;"   required>
+<br>
+<br>
+<end class="end-form">
+<button style="width: 100px;height: 50px; border-radius:40px; text-decoration: none;   "><a href="project.html" style="text-decoration: none; color: rgb(202, 41, 154);">Submit</button></a>
+
+ <input type="reset" value="Reset"style="width: 100px;height: 50px; border-radius:40px;"     >
+</end>
+        </form>
+</body>
+<footer>
+    <div class="logo2"> 
+        <f1> ALL RIGHTS RESERVED 2025</f1>
+       </div> 
+    </footer>
+</html>

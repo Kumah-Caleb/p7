@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+   * {
+        margin:0;
+       
+    }
+    body{
+        background-color: rgba(136, 104, 58, 0.603);
+        
+    }
+      header{
+    background-color: rgb(70, 62, 62);
+    color: aliceblue;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 20vh;    
+}
+.logo{
+    margin: 0px;
+    padding: 15px;
+    width: 70vw;
+    position: relative;
+    left: 19%;
+    font-size: 40px;
+    font-weight: bolder;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+span2{
+animation: movers 3s linear infinite;
+display: inline-block;
+color:rgb(70, 62, 62);
+font-weight: bolder;
+}
+@keyframes movers{
+    0%{
+        text-shadow: 0 0 30px rgb(255, 251, 251);
+}
+50%{
+    text-shadow: 0 0 30px rgb(255, 255, 255);
+  transform: translateY(20px);    
+}
+100%{
+    text-shadow: 0 0 30px;
+}
+}
+span2:nth-child(1)
+{
+    animation-delay: 0.5s;
+    width: 20vw;
+}
+ span2:nth-child(2)
+{
+    animation-delay: 1.0s;
+    width: 20vw;
+} 
+span2:nth-child(3)
+{
+    animation-delay: 1.5s;
+    width: 20vw;
+}
+.links{
+    display:flex;
+    justify-content: space-around;
+    justify-content:space-between ;
+    list-style: none; 
+    margin: 10px;
+    padding: 10px;
+    position: relative;
+    left: 13%;
+    width: 70vw;
+}
+p5{
+    display: flex;
+    justify-content:center;
+    margin:10px ;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: larger;
+    font-weight: bolder;
+    font-style: italic;
+    position: static;
+color:   rgb(173, 27, 130);
+position: relative;
+left: 300px;
+}
+P{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    color: rgb(255, 238, 0);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: larger;
+    font-weight: bolder;
+    font-style: italic;
+    position: static;
+}
+
+.flex-container
+{
+  
+    display: flex;
+    flex-direction:column;
+margin: 20px ;
+padding: 20px;
+width: 0vw;
+}
+.flex-container>div{
+    background-color: rgb(82, 24, 24);
+        margin: 10px;
+        padding: 0px;
+        font-size: 30px;
+        color: white;
+        width: 20vw;
+        height: 50vh;
+        text-align: center;
+    }
+    .wc{
+    display: flex;
+    flex-direction: row;
+    width: 20vw;
+    justify-content: space-around;
+    
+}
+.wt{
+    display: flex;
+    flex-direction: row;
+    width: 20vw;
+    justify-content: space-around;
+}
+.wd{
+    display: flex;
+    flex-direction: row;
+    width: 20vw;
+    justify-content: space-around;
+}
+.pc{
+    display: flex;
+    flex-direction: row;
+    width: 20vw;
+    justify-content: space-around;
+}
+.pt{
+    display: flex;
+    flex-direction: row;
+    width: 20vw;
+    justify-content: space-around;
+}
+.mw{
+    display: flex;
+    flex-direction: row;
+    width: 20vw;
+    justify-content: space-around;
+}
+.d{
+    display: flex;
+    flex-direction: row;
+    width: 20vw;
+    justify-content: space-around;
+}
+footer{
+background-color: rgba(218, 46, 46, 0);
+color: aliceblue;
+position: relative;
+top:100px;
+left: 0;
+width: 100vw;
+height: 5vh;    
+}  
+.logo2{
+    margin: 10px;
+    padding: 20px;
+    position: relative;
+    text-align: center;
+    bottom: 15px;
+    height: 2vh;
+    font-size:20px;
+}
+.butt{
+    display:flex;
+    justify-content: space-around;
+    justify-content:space-between ;
+    list-style: none; 
+    margin: 10px;
+    padding: 10px;
+    position: relative;
+    right: 5%;
+    width: 60vw;
+    bottom: 20px;
+}
+footer{
+background-color: rgba(218, 46, 46, 0);
+color: aliceblue;
+position: relative;
+top:100px;
+left: 0;
+width: 100vw;
+height: 5vh;    
+}
+.logo2{
+    margin: 10px;
+    padding: 20px;
+    position: relative;
+    text-align: center;
+    bottom: 15px;
+    height: 2vh;
+
+}
+</style>
+</head>
+<header>
+<div class="logo"> 
+    <span2> MILESTONE</span2>
+    <span2> DIGITAL</span2>
+    <span2>MARKETING</span2>
+   </div> 
+<nav>
+<ul class="links">
+<button style=" border-style:none; background-color:rgb(70, 62, 62); ; "><li><a href="index.html"style="text-decoration: none;background-color: rgb(70, 62, 62);color: aliceblue;font-size:20px">Home</li></button></a>
+<button style=" border-style:none; background-color:rgb(70, 62, 62); ; "><li><a href="register.html"style="text-decoration: none;background-color: rgb(70, 62, 62);color: aliceblue;font-size:20px">Register</li></button></a>
+<button style="border: none;background-color: rgb(70, 62, 62);"><li><a href="project.html"style="text-decoration: none;background-color: rgb(70, 62, 62);color: aliceblue;font-size:20px">Projects</li></button></a>
+<button style="border: none;background-color: rgb(70, 62, 62);"><li><a href="about.html" style="text-decoration: none;background-color: rgb(70, 62, 62);color: aliceblue;font-size:20px">About</li></button></a>
+<button style="border: none;background-color: rgb(70, 62, 62);"><li><a href="contact.html" style="text-decoration: none;background-color: rgb(70, 62, 62);color: aliceblue;font-size:20px">Contacts</button></li></a>
+ </ul>
+</div>
+</nav> 
+<p> SHOP FOR YOUR FAVORITE !!!</p>
+
+    <marquee behavior="scroll" direction="down" height="2300px"     ><p5> Affordable, Reliable and conducive<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> Affordable, Reliable and conducive<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>Affordable, Reliable and conducive</p5></marquee>
+           
+</header>
+
+<body>
+   
+       <div class="flex-container">
+        <div class="flex-item">Wooden Chair<br><br><img src="/Img/a-wooden-garden-chair photo.jpg" alt="Wooden chair" width="80%" height="60%" style="position: sticky relative;">
+       <wc class="wc">
+        <ul class="butt">
+         <button style="width: 100px;height: 30px; border-radius:40px; text-decoration: none;"><li><a href="chair1.html" style="text-decoration: none; color: rgb(202, 41, 154);">View</li></button></a>
+            <button style="width: 100px;height: 30px; border-radius:40px; text-decoration: none;   "><li><a href="buy.html" style="text-decoration: none; color: rgb(202, 41, 154);">Buy</li></button></a>
+    </wc>
+  </div>
+  <br>
+  <br>
+  <br>
+ 
+  <div class="flex-item">Wooden Table<br><br><img src="/Img/Table.jpeg" alt="Wooden Table" width="80%" height="60%" style="position: relative sticky;">
+     <wt class="wt">
+      <ul class="butt">
+         <button style="width: 100px;height: 30px; border-radius:40px; text-decoration: none;"><a href="table1.html" style="text-decoration: none; color: rgb(202, 41, 154);">View</button></a>
+         <button style="width: 100px;height: 30px; border-radius:40px; text-decoration: none;   "><a href="buy.html" style="text-decoration: none; color: rgb(202, 41, 154);">Buy</button></a>
+     </wt>
+  </div>
+     
+  <br>
+  <br>
+  <br>
+     
+     <div class="flex-item">Wardrobe<br><br><img src="/Img/Wardrobe.jpeg" alt="Wardrobe" width="80%" height="60%" style="position: relative sticky;">
+     <wd class="wd">
+        <ul class="butt">
+         <button style="width: 100px;height: 30px; border-radius:40px; text-decoration: none;   "><a href="wardrobe.html" style="text-decoration: none; color: rgb(202, 41, 154);">View</button></a>
+         <button style="width: 100px;height: 30px; border-radius:40px; text-decoration: none;   "><a href="buy.html" style="text-decoration: none; color: rgb(202, 41, 154);">Buy</button></a>
+     </wd>
+     </div>
+  <br>
+  <br>
+  <br>
+     <div class="flex-item">Plastic Chair<br><br><img src="/Img/Plastic Chair.jpeg" alt="Plastic Chair" width="80%" height="60%" style="position: relative  sticky;">
+     <pc class="pc">
+        <ul class="butt">
+         <button style="width: 100px;height: 30px; border-radius:40px; text-decoration: none;   "><a href="chair2.html" style="text-decoration: none; color: rgb(202, 41, 154);">View</button></a>
+         <button style="width: 100px;height: 30px; border-radius:40px; text-decoration: none;   "><a href="buy.html" style="text-decoration: none; color: rgb(202, 41, 154);">Buy</button></a>
+     </pc>
+     </div>
+     <br>
+     <br>
+     <br>
+     <div class="flex-item">Plastic Table<br><br><img src="/Img/Plastic Table.jpeg" alt="Plastic Table" width="80%" height="60%"  style="position: relative sticky;">
+     <pt class="pt">
+        <ul class="butt">
+         <button style="width: 100px;height: 30px; border-radius:40px; text-decoration: none;   "><a href="table2.html" style="text-decoration: none; color: rgb(202, 41, 154);">View</button></a>
+         <button style="width: 100px;height: 30px; border-radius:40px; text-decoration: none;   "><a href="buy.html" style="text-decoration: none; color: rgb(202, 41, 154);">Buy</button></a>
+     </pt>
+     </div>
+  <br>
+  <br>
+  <br>
+     <div class="flex-item">Metalic Woodrobe<br><br><img src="/Img/Metalic Wardrobe.jpeg" alt="Metalic Wardrobe" width="80%" height="50%"  style="position: relative sticky;">
+     <mw class="mw">
+        <ul class="butt">
+         <button style="width: 100px;height: 30px; border-radius:40px; text-decoration: none;   "><a href="wardrobe2.html" style="text-decoration: none; color: rgb(202, 41, 154);">View</button></a>
+         <button style="width: 100px;height: 30px; border-radius:40px; text-decoration: none;   "><a href="buy.html" style="text-decoration: none; color: rgb(202, 41, 154);">Buy</button></a>
+     </mw>
+     </div>
+  <br>
+  <br>
+  <br>
+     <div class="flex-item">Drawers<br><br><img src="/Img/Drawers.jpeg" alt="Drawers" width="80%" height="60%" style="position: relative sticky;">
+     <d class="d">
+        <ul class="butt">
+         <button style="width: 100px;height: 30px; border-radius:40px; text-decoration: none;   "><a href="drawer.html" style="text-decoration: none; color: rgb(202, 41, 154);">View</button></a>
+         <button style="width: 100px;height: 30px; border-radius:40px; text-decoration: none;   "><a href="buy.html" style="text-decoration: none; color: rgb(202, 41, 154);">Buy</button></a>
+    
+     </d>
+     </div>
+     </div>
+    
+  </body>
+  <footer>
+     
+  <div class="logo2"> 
+   <f1> ALL RIGHTS RESERVED 2025</f1>
+  </div> 
+  </footer>
+    </html>
+              
+    

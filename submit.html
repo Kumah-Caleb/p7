@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    *{
+        margin: 0;
+        
+       
+    }
+    body{
+        background-color:rgb(216, 218, 137);
+        
+        
+        }
+      
+    
+    
+    header{
+        background-color: rgb(70, 62, 62);
+        color: aliceblue;
+        position: sticky;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 20vh;    
+    }
+    .logo{
+        margin: 0px;
+        padding: 15px;
+        width: 70vw;
+        position: relative;
+        left: 22%;
+        font-size: 40px;
+        font-weight: bolder;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    span2{
+        animation: movers 3s linear infinite;
+        display: inline-block;
+        color:rgb(70, 62, 62);
+        font-weight: bolder;
+        }
+        @keyframes movers{
+            0%{
+                text-shadow: 0 0 30px rgb(255, 251, 251);
+        }
+        50%{
+            text-shadow: 0 0 30px rgb(255, 255, 255);
+          transform: translateY(20px);    
+        }
+        100%{
+            text-shadow: 0 0 30px;
+        }
+        }
+        span2:nth-child(1)
+        {
+            animation-delay: 0.5s;
+        } span2:nth-child(2)
+        {
+            animation-delay: 1.0s;
+        } 
+        span2:nth-child(3)
+        {
+            animation-delay: 1.5s;
+        }
+    .links{
+        display:flex;
+        justify-content: space-around;
+        justify-content: space-between;
+        list-style: none; 
+        margin: 10px;
+        padding: 10px;
+        position: relative;
+        left: 18%;
+        width: 50vw;
+    }
+    .submit{
+        margin: 10px;
+        padding: 10px;
+        text-align: center;
+        position: relative;
+        top: 90px;
+        font-size: large;
+        justify-items: space-around;
+    }
+    footer{
+    background-color: rgba(218, 46, 46, 0);
+    color: rgb(42, 74, 102);
+    position: relative;
+    top:100px;
+    left: 0;
+    width: 100vw;
+    height: 5vh;    
+    }
+    .logo2{
+        margin: 10px;
+        padding: 20px;
+        position: relative;
+        text-align: center;
+        bottom: 15px;
+        height: 2vh;
+    }
+    </style>    
+</head>
+<body>
+    <header>
+    <div class="logo"> 
+      <span2> MILESTONE</span2>
+      <span2> DIGITAL</span2>
+      <span2>MARKETING</span2>
+     </div> 
+<nav>
+ 
+  
+    <ul class="links">
+  <button style=" border-style:none; background-color:rgb(70, 62, 62); ; "><li><a href="index.html"style="text-decoration: none;background-color: rgb(70, 62, 62);color: aliceblue;font-size:20px">Home</li></button></a>
+  <button style=" border-style:none; background-color:rgb(70, 62, 62); ; "><li><a href="register.html"style="text-decoration: none;background-color: rgb(70, 62, 62);color: aliceblue;font-size:20px">Register</li></button></a>
+  <button style="border: none;background-color: rgb(70, 62, 62);"><li><a href="project.html"style="text-decoration: none;background-color: rgb(70, 62, 62);color: aliceblue;font-size:20px">Projects</li></button></a>
+  <button style="border: none;background-color: rgb(70, 62, 62);"><li><a href="about.html" style="text-decoration: none;background-color: rgb(70, 62, 62);color: aliceblue;font-size:20px">About</li></button></a>
+  <button style="border: none;background-color: rgb(70, 62, 62);"><li><a href="contact.html" style="text-decoration: none;background-color: rgb(70, 62, 62);color: aliceblue;font-size:20px">Contacts</button></li></a>
+    </ul>
+  </div>
+</nav> 
+    </header>
+    <div class="submit">
+    <div class="home">
+        <h1>Payment Recieved</h1>
+    </div>
+    <div class="congrats">
+        <h2>Congratulations</h2>
+    </div>
+    <div class="products">
+       <p> Transportation of products underway</p>
+    </div>
+    </div>
+</body>
+<footer>
+  <div class="logo2"> 
+      <f1> ALL RIGHTS RESERVED 2025</f1>
+     </div> 
+  </footer>
+</html>

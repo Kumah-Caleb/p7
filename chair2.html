@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin:0;
+        
+        }
+        body{
+            background-color: rgb(185, 177, 57);;
+            width: 10vw;
+        }
+            header{
+          background-color: rgb(70, 62, 62);
+          color: aliceblue;
+          position: sticky;
+          top: 0;
+          left: 0;
+          width: 100vw;
+          height: 20vh; 
+            }
+          .logo{
+          margin: 0px;
+          padding: 15px;
+          width: 70vw;
+          position: relative;
+          left: 19%;
+          font-size: 30px;
+          font-weight: bolder;
+          font-family: 'Courier New', Courier, monospace;
+      
+      }
+      span2{
+      animation: movers 3s linear infinite;
+      display: inline-block;
+      color:rgb(70, 62, 62);
+      font-weight: bolder;
+      width: 40vw;
+      }
+      @keyframes movers{
+          0%{
+              text-shadow: 0 0 30px rgb(255, 251, 251);
+      }
+      50%{
+          text-shadow: 0 0 30px rgb(255, 255, 255);
+        transform: translateY(20px);    
+      }
+      100%{
+          text-shadow: 0 0 30px;
+      }
+      }
+      span2:nth-child(1)
+      {
+          animation-delay: 0.5s;
+          width: 20vw;
+      }
+       span2:nth-child(2)
+      {
+          animation-delay: 1.0s;
+          width: 20vw;
+      } 
+      span2:nth-child(3)
+      {
+          animation-delay: 1.5s;
+          width: 20vw;
+      }
+      .links{
+          display:flex;
+          justify-content: space-around;
+          justify-content:space-between ;
+          list-style: none; 
+          margin: 10px;
+          padding: 10px;
+          position: relative;
+          left: 12%;
+          width:70vw;
+      }   
+      P{
+        display: flex;
+        justify-content: center;
+        margin: 10px;
+        color:rgb(153, 43, 43);
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: larger;
+        font-weight: bolder;
+        font-style: italic;
+        position: static;
+        width: 100vw;
+    }
+    .chair2{
+        margin: 90px;
+        padding: 90px;
+        background-color: rgb(165, 81, 93);
+        display: flex;
+        width: 200px;
+        height: 200px;
+        justify-content: center;
+        position:  static;
+    }
+    img{
+        margin: 10px;
+        padding: 10px ;
+        position: relative;
+        bottom: 40px;
+        display: flex;
+        justify-content:center;
+        width: 200px;
+        height: 200px;
+        position:  static;
+    }
+    .zoom{
+        transition: transform 0.2s;
+    }
+    .zoom:hover{
+        transform: scale(1.5);
+    }
+    p5{
+display: flex;
+justify-content:center;
+margin:10px ;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+font-size: larger;
+font-weight: bolder;
+font-style: italic;
+position: static;
+color:   rgb(173, 27, 130);
+position: relative;
+left: 360px;
+}
+    
+
+footer{
+background-color: rgba(218, 46, 46, 0);
+color: aliceblue;
+position: relative;
+top:100px;
+left: 0;
+width: 100vw;
+height: 5vh;    
+}
+.logo2{
+    margin: 10px;
+    padding: 20px;
+    position: relative;
+    text-align: center;
+    bottom: 15px;
+    height: 2vh;
+
+}
+</style>
+    </head>
+    <header>
+        <div class="logo"> 
+            <span2> MILESTONE</span2>
+            <span2> DIGITAL</span2>
+            <span2>MARKETING</span2>
+           </div> 
+        <nav>
+        <ul class="links">
+        <button style=" border-style:none; background-color:rgb(70, 62, 62); ; "><li><a href="index.html"style="text-decoration: none;background-color: rgb(70, 62, 62);color: aliceblue;font-size:20px">Home</li></button></a>
+        <button style=" border-style:none; background-color:rgb(70, 62, 62); ; "><li><a href="register.html"style="text-decoration: none;background-color: rgb(70, 62, 62);color: aliceblue;font-size:20px">Register</li></button></a>
+        <button style="border: none;background-color: rgb(70, 62, 62);"><li><a href="project.html"style="text-decoration: none;background-color: rgb(70, 62, 62);color: aliceblue;font-size:20px">Projects</li></button></a>
+        <button style="border: none;background-color: rgb(70, 62, 62);"><li><a href="about.html" style="text-decoration: none;background-color: rgb(70, 62, 62);color: aliceblue;font-size:20px">About</li></button></a>
+        <button style="border: none;background-color: rgb(70, 62, 62);"><li><a href="contact.html" style="text-decoration: none;background-color: rgb(70, 62, 62);color: aliceblue;font-size:20px">Contacts</button></li></a>
+         </ul>
+        </div>
+        </nav> 
+        <p> SHOP FOR YOUR FAVORITE !!!</p>
+        
+        <marquee behavior="scroll" direction="down" height="350px"     ><p5> Affordable, Reliable and conducive</p5></marquee>
+        </header>
+    <body>
+        <div class="zoom">
+        <div class="chair2">
+      <img src="/Img/Plastic Chair.jpeg" alt="Plastic Chair">
+        </div>
+        </div>
+        <button  style="position: relative; left: 200px;bottom: 60px; width: 100px; border-radius: 50px;  height: 50px;"><a href="buy.html" style="text-decoration: none; color: rgb(204, 10, 20); font-weight: bolder; font-family:Georgia, 'Times New Roman', Times, serif;   "    >Purchase Plastic Chair</button></a> 
+       
+        <comments class="comments">
+
+        </comments>
+    </body>
+    <footer>
+        <div class="logo2"> 
+            <f1> ALL RIGHTS RESERVED 2025</f1>
+           </div> 
+        </footer>
+</html>
